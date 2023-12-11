@@ -1,7 +1,7 @@
 // axiosInstance.js
 import axios from 'axios';
 
-const baseURL = 'https://whale-app-kttx5.ondigitalocean.app/api/v1'; // replace with your API base URL
+const baseURL = 'https://seashell-app-tro9i.ondigitalocean.app'; // replace with your API base URL
 
 const Axios = axios.create({
   baseURL,
