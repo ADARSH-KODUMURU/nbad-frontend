@@ -1,16 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-import Signup from "./LoginSignUp/Signup";
 import Login from "./Login";
 import HomePage from "./HomePage";
 import ConfigureBudget from "./ConfigureBudget";
 import ConfigExpanses from "./ConfigExpanses";
 import "./App.css";
-import ConfigBudget from "./ConfigBudget";
 import { useState, useEffect } from "react";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import { Button } from "@mui/material";
 import { connect } from "react-redux";
@@ -22,7 +19,7 @@ function App(props) {
   useEffect(() => {
     const intervalId = setInterval(() => {
       if (isUserLoggedIn && localStorage.getItem("TOKEN")) setOpenDialog(true);
-    }, 100000);
+    }, 120000);
 
     return () => clearInterval(intervalId);
   }, [isUserLoggedIn]);

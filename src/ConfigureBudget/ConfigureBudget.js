@@ -9,6 +9,7 @@ import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 // import TableBody from '@mui/material/TableBody';
 import { tableCellClasses } from "@mui/material/TableCell";
 import Navbar from "../Navbar";
+import DeleteIcon from '@mui/icons-material/Delete';
 import {
   Button,
   TableRow,
@@ -41,21 +42,27 @@ const ConfigureBudget = (props) => {
   console.log(budgetsData);
   const StyledTableRow = styled(TableRow)(({ theme }) => ({
     "&:nth-of-type(odd)": {
-      backgroundColor: "#fce77e59",
+      backgroundColor: "#424bf995",
     },
     // hide last border
     "&:last-child td, &:last-child th": {
       border: 0,
+      fontFamily: 'Nova Square',
+      color: 'black'
     },
   }));
 
   const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
-      backgroundColor: "#fa6166",
+      backgroundColor: "#12006c",
+      fontFamily: 'Nova Square',
       color: theme.palette.common.white,
+      fontSize: 20,
+      fontWeight: 700
     },
     [`&.${tableCellClasses.body}`]: {
       fontSize: 14,
+      color: 'black'
     },
   }));
 
@@ -244,16 +251,16 @@ const ConfigureBudget = (props) => {
           </div>
 
           <TableContainer
-            sx={{ width: "95vw", fontFamily: "Nova Square" }}
+            sx={{ width: "100vw", fontFamily: "Nova Square" }}
             className="pieChartConfigCont"
             component={Paper}
           >
             <Table
-              sx={{ minWidth: 650, height: "100%" }}
+              sx={{ minWidth: 650, height: "100%", width: '100vw' }}
               aria-label="simple table"
             >
-              <TableHead className="tableHeader">
-                <TableRow sx={{ backgroundColor: "#fa6166" }}>
+              <TableHead className="tableHeader" style={{ width: '100vw' }}>
+                <TableRow sx={{ backgroundColor: "#12006c" }}>
                   <StyledTableCell sx={{ paddingLeft: "100px" }} align="left">
                     Catagory Name
                   </StyledTableCell>
@@ -292,16 +299,9 @@ const ConfigureBudget = (props) => {
                         sx={{ paddingRight: "50px" }}
                         align="center"
                       >
-                        <Button
-                          variant="contained"
-                          sx={{
-                            backgroundColor: "#fa6166",
-                            color: "white",
-                          }}
-                          onClick={() => handleCategoryDelete(index)}
-                        >
-                          DELETE
-                        </Button>
+                      <span onClick={() => handleCategoryDelete(index)}>
+                      <DeleteIcon style={{ color: 'red' }}/>
+                      </span>
                       </StyledTableCell>
                     </StyledTableRow>
                   ))

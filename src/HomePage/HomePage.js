@@ -97,13 +97,13 @@ const HomePage = (props) => {
     let dateArray = [];
     let amountSpentArray = [];
     console.log(budgetsData)
-    if(budgetsData && Object.keys(budgetsData).length > 0) {
+    if (budgetsData && Object.keys(budgetsData).length > 0) {
       const {
         categories,
         totalAmount,
       } = budgetsData;
       const sortedData = barChartExpnesesData.sort((a, b) => new Date(a.date) - new Date(b.date));
-  
+
       let decrementArrayBudget = [];
       let budgetLeft = totalAmount;
       let expensesDone = 0;
@@ -131,9 +131,9 @@ const HomePage = (props) => {
   return (<>
     <div className="masterDashBoardContainer">
       <Navbar title={'Dashboard'} />
-      <div className="upperDashboardContainer">
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <Paper elevation={3} className="verticalChartContainer">
-          <div className="headerForBoxes">EXPENSES and BUDGET LEFT Vs DATE</div>
+          <div className="headerForBoxes"></div>
           <Bar options={{
             maintainAspectRatio: false,
             responsive: true,
@@ -158,35 +158,41 @@ const HomePage = (props) => {
               {
                 label: 'Expenses',
                 data: expensesForBarGraph,
-                backgroundColor: '#fa6166',
+                backgroundColor: 'green',
               },
               {
                 label: 'Budget Left',
                 data: budgetForBarGraph,
-                backgroundColor: '#f1b92c',
+                backgroundColor: 'skyblue',
               },
             ],
           }} />
         </Paper>
+        <Paper elevation={3} style={{ width: '50%', margin: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '30px', fontWeight: '700' }}>
+          EXPENSES and BUDGET<br /> LEFT Vs DATE
+        </Paper>
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Paper elevation={3} style={{ width: '50%', margin: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '30px', fontWeight: '700' }}>
+          TOTAL EXPENSES / TOTAL BUDGET
+        </Paper>
         <Paper elevation={3} className='totaExpensesVsIncomeAmountperMonth'>
-          <div className="headerForBoxes">TOTAL EXPENSES / TOTAL BUDGET</div>
-
           <div className="incomExpanceDividerContainer">
             <div className='fractionLabel'>
-              Expenses: <span className='fractionValue'>{totalExpenseValue}</span>
+              Expenses: <span className='fractionValue'  style={{color:'blue'}}>{totalExpenseValue}</span>
             </div>
             <div className="hrCont">
               <hr />
             </div>
             <div className='fractionLabel'>
-              Budget: <span className='fractionValue incomeFraction'>{budgetValue}</span>
+              Budget: <span className='fractionValue incomeFraction' style={{color:'green'}}>{budgetValue}</span>
             </div>
           </div>
         </Paper>
       </div>
-      <div className="downDashboardContainer">
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <Paper elevation={3} className='pieChartContainer'>
-          <div className="headerForBoxes">EXPENSES Per BUDGET CATAGORY</div>
+          <div className="headerForBoxes"></div>
           <Pie
             data={{
               labels: Object.keys(amountPerCatagory),
@@ -195,9 +201,9 @@ const HomePage = (props) => {
                   label: '# of Votes',
                   data: Object.values(amountPerCatagory),
                   backgroundColor: [
-                    '#f1b92c',
+                    'skyblue',
                     '#fa6166',
-                    '#4065cc',
+                    'green',
                     'rgba(75, 192, 192, 0.2)',
                     'rgba(153, 102, 255, 0.2)',
                     'rgba(255, 159, 64, 0.2)',
@@ -236,8 +242,16 @@ const HomePage = (props) => {
             }}
           />
         </Paper>
+        <Paper elevation={3} style={{ width: '50%', margin: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '30px', fontWeight: '700' }}>
+          EXPENSES Per BUDGET CATAGORY
+        </Paper>
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'end' }}>
+        <Paper elevation={3} style={{ width: '50%', margin: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '30px', fontWeight: '700' }}>
+          AMOUNT Vs CATEGORIES
+        </Paper>
         <Paper elevation={3} className='lineChartContainer'>
-          <div className="headerForBoxes">AMOUNT Vs CATAGORIES</div>
+          <div className="headerForBoxes"></div>
           <Bar options={{
             maintainAspectRatio: false,
             responsive: true,
@@ -258,7 +272,7 @@ const HomePage = (props) => {
               {
                 label: 'Budget per Catagory',
                 data: catagoryAmountArray,
-                backgroundColor: '#4065cc',
+                backgroundColor: 'skyblue',
               },
             ],
           }} />

@@ -104,7 +104,8 @@ body {
   position: sticky;
   width: 100% !important;
   top: 0;
-  color: #fcf1b859;
+
+  color: #424bf995;
 }
 
 .tabelBody {
@@ -153,7 +154,7 @@ body {
   height: 100%;
 }
 .calculateAmount {
-  color: #fce77e;
+  color: #424cf9;
 }
 
 .addBudgetButton {
