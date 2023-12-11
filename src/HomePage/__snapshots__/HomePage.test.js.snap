@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomePage/> Should render <HomePage/> component without crashing 1`] = `
+"<Fragment>
+  <div className=\\"masterDashBoardContainer\\">
+    <Navbar title=\\"Dashboard\\" />
+    <div className=\\"upperDashboardContainer\\">
+      <ForwardRef(Paper) elevation={3} className=\\"verticalChartContainer\\">
+        <div className=\\"headerForBoxes\\">
+          EXPENSES and BUDGET LEFT Vs DATE
+        </div>
+        <ForwardRef options={{...}} data={{...}} />
+      </ForwardRef(Paper)>
+      <ForwardRef(Paper) elevation={3} className=\\"totaExpensesVsIncomeAmountperMonth\\">
+        <div className=\\"headerForBoxes\\">
+          TOTAL EXPENSES / TOTAL BUDGET
+        </div>
+        <div className=\\"incomExpanceDividerContainer\\">
+          <div className=\\"fractionLabel\\">
+            Expenses: 
+            <span className=\\"fractionValue\\">
+              0
+            </span>
+          </div>
+          <div className=\\"hrCont\\">
+            <hr />
+          </div>
+          <div className=\\"fractionLabel\\">
+            Budget: 
+            <span className=\\"fractionValue incomeFraction\\">
+              0
+            </span>
+          </div>
+        </div>
+      </ForwardRef(Paper)>
+    </div>
+    <div className=\\"downDashboardContainer\\">
+      <ForwardRef(Paper) elevation={3} className=\\"pieChartContainer\\">
+        <div className=\\"headerForBoxes\\">
+          EXPENSES Per BUDGET CATAGORY
+        </div>
+        <ForwardRef data={{...}} options={{...}} />
+      </ForwardRef(Paper)>
+      <ForwardRef(Paper) elevation={3} className=\\"lineChartContainer\\">
+        <div className=\\"headerForBoxes\\">
+          AMOUNT Vs CATAGORIES
+        </div>
+        <ForwardRef options={{...}} data={{...}} />
+      </ForwardRef(Paper)>
+    </div>
+  </div>
+</Fragment>"
+`;

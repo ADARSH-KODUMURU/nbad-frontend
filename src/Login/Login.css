@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200&family=Outfit:wght@500;700&family=Roboto+Condensed:wght@400;600;625;900&display=swap');
+
+body {
+  font-family: Nova Square;
+  margin: 0;
+  padding: 0;
+  /* background-image: url(../Images/LoginPage.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+.login-container {
+  display: flex !important;
+  justify-content: center;
+  align-items: end;
+  height: 90vh;
+  color: #5facdf
+}
+
+.switchSignupSigninText:hover {
+  text-decoration: underline;
+}
+
+.login-paper {
+  padding: 20px;
+  width: 60%;
+  height: 80%;
+  display: flex;
+  /* border: 2px solid blue; */
+  border-radius: 50px 50px 0 0!important;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  background-image: url(../Images/LoginBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+
+.login-textfield {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.login-button {
+  margin-top: 15px;
+}

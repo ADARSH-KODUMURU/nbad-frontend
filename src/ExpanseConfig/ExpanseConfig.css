@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200&family=Outfit:wght@500;700&family=Roboto+Condensed:wght@400;600;625;900&display=swap');
+.masterEpansesContainer {
+  background-image: url(../Images/LoginPage.jpg);
+  background-size: contain;
+  height: 100vh;
+}
+
+.expansesHeader {
+  height: 10vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Nova Square;
+  padding: 0 40px;
+  background-color: #fc766a;
+}
+.formUpper {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.subHeader {
+  width: 100%;
+  font-family: Nova Square;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.totalBudgetForMonth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  color: white;
+  width: 100%;
+  font-size: 120px;
+  font-weight: 800;
+  font-family: Nova Square;
+}
+
+.formLower {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 10px 0px;
+}
+.catagorySelect {
+  width: 100px;
+}
+.expansesForm {
+  height: 80vh;
+  width: 50vw;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+  padding: 20px;
+  /* display: flex; */
+}
+
+.addButtonExp:hover {
+  background-color: rgba(182, 117, 87, 0.502)!important;
+  color: white !important;
+
+}
+
+.pageContainer {
+  display: flex;  
+}
+
+.addButtonAndFilter {
+  width: 100%;
+  display: flex;
+  margin: 20px;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.noDataMessageForExp {
+  height: 40vh;
+  width: 100%;
+  font-size: 30px;
+  font-family: Nova Square;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addbuttonCont {
+  cursor: pointer;
+}
+
+.tableExpConfigCont {
+  min-height: 50vh;
+  max-height: 85.5vh;
+}
+
+.tableExp {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  margin: 10px 0;
+  height: 40vh;
+  width: 45vw;
+}
+.expTable {
+  height: 100%;
+  width: 100%;
+}

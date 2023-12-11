@@ -1,0 +1,75 @@
+
+.masterEpansesContainer {
+  background-image: url(../Images/LoginPage.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.upperExpenseFields {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.expenseLowerFields {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+.expansesHeader {
+  height: 10vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Nova Square;
+  padding: 0 40px;
+  color: #f64b51;
+}
+
+.expansesFormContainer {
+  height: 30vh;
+  display: flex;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  margin: 20px;
+}
+
+.noDataMessageForExp {
+  height: 40vh;
+  width: 100%;
+  font-size: 30px;
+  font-family: Nova Square;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addbuttonCont {
+  cursor: pointer;
+}
+
+.addbuttonCont:hover {
+  background-color: blue!important;
+}
+
+.pieChartExpConfigCont {
+  min-height: 30vh;
+  max-height: 37vh;
+}
+
+.tableContainerExp {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  height: 37vh;
+}
+.expanseTable {
+  height: 100%;
+  width: 100%;
+}

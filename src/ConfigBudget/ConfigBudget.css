@@ -1,0 +1,10 @@
+.congigBudgetMasterContainer {
+  font-family: Nova Square;
+}
+
+.monthlyInputTag {
+  height: 50px;
+  width: 300px;
+  font-size: 20px;
+  padding: 10px;
+}
