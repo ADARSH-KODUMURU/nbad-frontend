@@ -178,7 +178,7 @@ const ConfigExpanses = (props) => {
   return (
     <>
       <div className="masterEpansesContainer">
-        <Navbar title={"Config Expanses"} />
+        <Navbar title={"Config Expenses"} />
         <div style={{ width: '100vw', display: 'flex', justifyContent: 'center' }}>
           <Paper
             className="expansesFormContainer"
