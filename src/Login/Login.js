@@ -38,7 +38,7 @@ const Login = (props) => {
   };
   return (
     <div>
-      <Navbar title={'MANAGE YOUR BUDGET AND EXPANSES HERE'} loginPage={true}/>
+      <Navbar title={'MANAGE YOUR BUDGET AND EXPENSES HERE'} loginPage={true}/>
       <Container className="login-container">
         {<Paper elevation={30} className="login-paper">
           <Typography sx={{ color: 'white', fontSize: '40px', fontFamily: 'Nova Square', height: '60px' }} variant="h5" gutterBottom>
