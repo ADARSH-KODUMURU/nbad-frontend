@@ -22,7 +22,7 @@ function App(props) {
   useEffect(() => {
     const intervalId = setInterval(() => {
       if (isUserLoggedIn && localStorage.getItem("TOKEN")) setOpenDialog(true);
-    }, 10000);
+    }, 100000);
 
     return () => clearInterval(intervalId);
   }, [isUserLoggedIn]);
